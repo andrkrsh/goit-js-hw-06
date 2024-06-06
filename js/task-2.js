@@ -10,7 +10,7 @@ class Storage {
         return this.#items.push(newItem);
     }
     removeItem(itemToRemove) {
-        return this.#items.filter(item => item === !itemToRemove);          /* запитати про синтаксиз */
+        return this.#items.filter(item => item !== itemToRemove);          /* запитати про синтаксиз */
     }
 }
 
